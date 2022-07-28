@@ -1,0 +1,140 @@
+
+
+
+
+/* media querires */
+/* media querires */
+@media (max-width:1300px) {
+    .max-width{
+       margin-left: 0px;
+    }
+}
+@media (max-width:1104px) {
+    .about .content .left img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+    }
+   
+}
+@media (min-width:946px) {
+    nav button#close-menu-btn{
+        display: none;
+    }
+}
+@media (max-width:945px) {
+    .max-width{
+        padding: 0 50px; 
+    }
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    nav button#close-menu-btn{
+        display: none;
+    }
+    
+    .menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: row;
+        gap: 0;
+        display: none;
+    }
+    .menu li{
+        width: 100%;
+        height: 4.4rem;
+    }
+    .menu li a{
+        background: crimson;
+        /* box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6); */
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .navbar.menu li a:hover{
+        background: yellow;
+        color: #fff;
+    }
+    .home .content .text1{
+        font-size: 29px;
+    }
+     .home .content .text2{
+        font-size: 60px;
+    }
+    .home .content .text3{
+        font-size: 40px;
+    }
+    
+    .about .content .column{
+        width: 100%;
+    }
+    .about .content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .about .content .column .right{
+        flex: 100%;
+    }
+    .service .serv-content .card{
+        width: calc(50% - 10px);
+      
+    }
+    .team .carousel .card{
+        width: calc(50% - 10px);
+    }
+    .contact .contact-content .column{
+        width: calc(50% - 10px);
+    }
+    
+    
+}
+@media (max-width:720px){
+    .max-width{
+        padding: 0 23px; 
+    }
+    .home .content .text2{
+        font-size: 60px;
+    }
+    .home .content .text3{
+        font-size: 30px;
+    }
+    .service .serv-content .card{
+        width: 100%;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .team .carousel .card{
+        width: 100%;
+    }
+    .contact .contact-content .column{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px){
+   
+    .home .content .text2{
+        font-size: 70px;
+    }
+    .home .content .text3{
+        font-size: 27px;
+    }
+    .about .content  .left{
+        margin-bottom: 3rem;
+    }
+    .about .content  .right .text{
+        margin-bottom: 3rem;
+    }
+      
+    }

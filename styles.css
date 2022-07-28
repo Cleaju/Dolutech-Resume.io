@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Open+Sans&family=Poppins:wght@100;200;400;600&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px; 
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}  
+/* scroll down */
+.window-scroll{
+background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 30px;
+    color: #fff;
+
+}
+.navbar .menu{
+    font-size: 20px;
+    padding: 15px 0;
+}
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .menu li a{
+    margin-left: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3 ease;
+}
+.navbar .menu li a:hover{
+    color: #111;
+    border: 2px solid #222;
+    border-radius: 6px;
+    padding: 2px 3px;
+    background-color:crimson;
+    
+}
+/* menu-btn styling */
+
+nav button{
+    display: none;
+}
+/* home seciton styling */
+.home{
+    display: flex;
+    background: url(./assets/istockphoto-915097804-170667a.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .content .text1{
+   font-size: 27px;
+}
+.home .content .text2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+
+}
+.home .content .text3{
+    font-size: 45px;
+    font-weight: 500;
+    margin: 5px 0;
+
+}
+.home .content .text3 span{
+    color: crimson;
+    font-family: 700;
+}
+.home .btn,
+.about .btn{
+    margin-top: 50px;
+}
+.home  .btn a,
+.skills .btn a{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: crimson;
+    border-radius: 6px;
+    padding: 10px 15px;
+    outline: none;
+    transition: all 0.3 ease;
+}
+.home  .btn a:hover
+{
+    border: 2px solid #fff;
+    outline-style: dotted;
+
+}
+
+/*similar styling  */
+.about .title,
+.service .title,
+.skills .title,
+.team .title,
+.contact .title{
+    font-size: 3rem;
+    color: crimson;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+}
+.about .content,
+.service .serv-content,
+.skills .skills-content,
+.team .carousel,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+/* about styling section */
+/* about styling section */
+
+.about .content .left{
+    width: 45%;
+}
+
+.about .content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.about .content .right{
+    width: 55%;
+    text-align: center;
+}
+.about .content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+.about .content .right .text span{
+    color: crimson;
+}
+.about .content .right p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.about .content .right a{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: crimson;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    padding: 10px 30px;
+    transition: all 0.3 ease;
+}
+.about .content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+/* service styling section */
+
+.service{
+    background-color:#111;
+    
+}
+.service .width{
+    background-color:#111;
+   
+   
+}
+.service .title{
+    color: #fff;
+}
+
+.service .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.service .serv-content .card .box{
+    transition: all 0.3 ease;
+}
+.service .serv-content .card:hover{
+    background: crimson;
+}
+.service .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.service .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: all 0.3 ease;
+}
+.service .serv-content .card .box:hover i{
+    color: #fff;
+}
+.service .serv-content .card .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0 7px 0;
+    color: #fff;
+}
+.service .serv-content .card p{
+    color: #fff;
+    line-height: 1.5;
+}
+.service .serv-content .card a{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    background: #fff;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    padding: 5px 15px;
+    transition: all 0.3 ease;
+    margin-top: 10px;
+}
+.service .serv-content .card a:hover{
+    color: crimson;
+    cursor: pointer;
+    background: #fff;
+}
+/* skills styling */
+
+.skills .skills-content .column{
+    width: calc(50% - 10%);
+}
+.skills .skills-content .col-1 .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .col-1 p{
+     text-align: justify;
+     margin-bottom: 3rem;
+}
+.skills .skills-content .col-1 a:hover{
+    border: 2px solid crimson;
+    background: none;
+    color: crimson;
+}
+.skills .skills-content .col-2 .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .col-2 .info{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .skills-content .col-2 span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.skills .skills-content .col-2 .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+.skills .skills-content .col-2 .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: crimson;
+}
+.skills .skills-content .col-2 .html::before{
+    width: 90%;
+}
+.skills .skills-content .col-2 .css::before{
+    width: 50%;
+}
+.skills .skills-content .col-2 .js::before{
+    width: 30%;
+}
+
+/* team styling */
+.team{
+    color: #fff;
+    background-color: #111;
+    margin: 100px 0;
+}
+.team .title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    
+} 
+.team .carousel{
+    
+     
+    
+    
+}
+.team .carousel .card{
+    width: calc(33% - 10px);
+}
+.team .carousel .card{
+    margin-bottom: 5rem;
+    background: #222;
+    padding: 28px 35px;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+}
+.team .carousel img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    align-items: center;
+}
+.team .carousel .text{
+    font-size: 1rem;
+    color: crimson;
+    text-align: center;
+}
+
+/* contact section styling */
+.contact .contact-content .column{
+    width: calc(50% - 10%);
+}
+.contact .contact-content .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+    font-size: 20px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins';
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    padding: 3px 10px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    background-color: crimson;
+    cursor: pointer;
+}
+.contact .right form .button button:hover{
+    background:none;
+    color: #000;
+}
+/* footer section styling */
+footer{
+    background-color: #111;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+footer span{
+    color: #fff;
+}
+footer span a{
+    color: crimson;
+}
+footer .fa-copyright{
+    font-size: 15px;
+}
